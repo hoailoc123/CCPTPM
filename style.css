@@ -1,0 +1,148 @@
+/* Reset css để loại bỏ các mặc định của trinh duyệt
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+     /* Thiet lap font chang cho trang web */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* /* Chia trung thành thai cat */
+    max-width: 1200px;
+    
+    margin: auto;
+    }
+    /* Phần tiêu đề trang web */
+    header {
+    background-color:#c7cc19;
+    color: #fff;
+    padding:20px;
+    text-align: center;
+    grid-column: 1 / span 2;
+    /* Trải đều qua cả hai cột */
+    }
+    /*Phần menu điều hướng */
+    nav {
+    background-color: #ffa486;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+    }
+    nav ul {
+    list-style: none;
+    }
+    nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+    
+    .product-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Hiển thị 3 sản phẩm trên mỗi hàng */
+        gap: 20px;
+        /* /* Khoang cach cua cac san pham */
+        padding: 20px;
+        grid-column: 1;
+        /* Chỉ nằm ở cột đầu tiên */
+    }
+    
+    .product-card{
+    background-color:#fff;
+    border: 1px solid Ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center; 
+    }/* Can giua noi dung truong son pham */
+    .product-card img {
+    max-width: 100%;
+    height: auto;
+    }
+    /* Phan sidebar */
+    .sidebar {
+        background-color: #199cff;
+        color: #fff;
+        padding: 10px;
+        grid-column: 2;
+        /* /* Chinamoco t thu hai */
+    }
+        .social-icons {
+        margin-top: 20px;
+        }
+        .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        }
+        /* Chỉnh lại bố cục cho màn hi nh thiết bị di động */
+        @media (max-width: 576px) {
+        .product-list {
+        grid-template-columns: 1fr;
+        /* Hiển thị một sản phẩm trên mỗi hàng */
+        }
+        .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+        }
+        .sidebar {
+        grid-column: 1 / span 2;
+        /* Trải đều qua cả hai cột */
+        /* /* Ching li bo cu co phan footer */
+        }
+        .footer {
+        grid-template-columns: 1fr;
+        }
+    }
+    /* Phän footer */
+    /* Footer styling */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        display: grid;
+    }
+    
+    /* Style for each item within the footer */
+    .footer-item {
+        padding: 10px;
+    }
+    
+    /* Adjust layout for screens wider than 768px */
+    @media (min-width: 768px) {
+        .footer {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column: 1 / span 3; /* Corrected the span to 3 */
+        }
+    }
+    
+        .button {
+        background-color: #04AA6D;
+        border: none;
+        color: White;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        }
+        .button1{
+            border-radius: 2px;
+        }
+        .button3{
+            border-radius: 8px;
+        }
+        .button4{
+            border-radius: 12px;
+        }
+        .button5{
+            border-radius: 50%;
+        }
